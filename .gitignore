@@ -1,0 +1,64 @@
+# ──────────────────────────────────────────────────────────────────────────────
+# Next Word Predictor — .gitignore
+# ──────────────────────────────────────────────────────────────────────────────
+
+# ── Model weights (large binary files — regenerate with training script) ──────
+models/*.keras
+models/*.h5
+models/*.npy
+
+# ── Corpus files (re-download with data/download_corpus.py) ──────────────────
+data/*.txt
+data/*.csv
+data/*.json
+
+# ── Generated plots (recreated automatically during training) ─────────────────
+results/*.png
+results/*.pdf
+results/*.jpg
+
+# ── Python cache ──────────────────────────────────────────────────────────────
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+.Python
+
+# ── Jupyter artefacts ─────────────────────────────────────────────────────────
+.ipynb_checkpoints/
+*.ipynb_checkpoints
+
+# ── Virtual environments ──────────────────────────────────────────────────────
+venv/
+.venv/
+env/
+.env/
+
+# ── Environment variables ─────────────────────────────────────────────────────
+.env
+.env.local
+
+# ── Distribution / build ──────────────────────────────────────────────────────
+dist/
+build/
+*.egg-info/
+.eggs/
+
+# ── IDE ───────────────────────────────────────────────────────────────────────
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# ── OS ────────────────────────────────────────────────────────────────────────
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# ── Pytest ────────────────────────────────────────────────────────────────────
+.pytest_cache/
+.coverage
+htmlcov/
+
+# ── Streamlit ─────────────────────────────────────────────────────────────────
+.streamlit/secrets.toml
